@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Survey — Get Your Reward</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .banner p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .download-btn {
+    display: inline-block;
+    background: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .download-btn:hover {
+    background: #1f52ad;
+  }
+  .card {
+    background: white;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 22px;
+    color: #222;
+  }
+  p {
+    color: #555;
+  }
+  label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  button[type="submit"] {
+    margin-top: 20px;
+    background: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background: #1f52ad;
+  }
+</style>
+</head>
+<body>
+
+  <div class="banner">
+    <p><strong>Official Campaign QR Code</strong></p>
+    <a class="download-btn" href="qr_clean.bmp" download>Download QR Flyer</a>
+  </div>
+
+  <div class="card">
+    <h1>Thanks for scanning! 🎉</h1>
+    <p>Fill out this quick survey to claim your free credit.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Thank you! Your credit will be applied shortly.');">
+      <label>Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>How did you hear about us?</label>
+      <input type="text">
+
+      <label>Feedback</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Submit & Get Credit</button>
+    </form>
+  </div>
+
+</body>
+</html>
